@@ -1,5 +1,45 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: green;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    
+
+    
 }
+ .container{
+    display:block;
+    width: 400px;
+    height: 600px;
+    background: white;
+    border-radius:10px;
+    
+
+}
+
+.pinta-roja{
+    font-size: 90px;
+    color:red
+}
+
+.pinta-negra{
+    font-size: 90px;
+    color:black
+}
+
+.footer{
+    transform: rotate(180deg);
+}
+
+.number{
+    font-size: 100px;
+    font-family: serif; 
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+
