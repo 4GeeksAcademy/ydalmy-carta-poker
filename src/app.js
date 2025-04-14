@@ -32,9 +32,7 @@ let clase = clases[indiceClase];
 let headerHTMLObj = document.getElementById("header");
 let footerHTMLObj = document.getElementById("footer");
 
-// Asignando la clase elegida al DIV anterior
-headerHTMLObj.classList.add(clase);
-footerHTMLObj.classList.add(clase);
+
 
 // Asignando la pinta
 let indicePinta = Math.floor(Math.random() * pintas.length);
@@ -45,5 +43,15 @@ let pinta = pintas[indicePinta];
 // Asignando la clase elegida al DIV anterior
 footerHTMLObj.innerHTML = pinta;
 headerHTMLObj.innerHTML = pinta;
+
+// Asignando la clase elegida al DIV anterior
+if(pinta == "♦" || pinta == "♥"){
+    headerHTMLObj.classList.add("pinta-roja");
+    footerHTMLObj.classList.add("pinta-roja");
+}
+else{
+    headerHTMLObj.classList.add("pinta-negra");
+    footerHTMLObj.classList.add("pinta-negra");
+}
 
 };
